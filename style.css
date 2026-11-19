@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8ef;
+    color: #49382c;
+}
+
+.filtros {
+    background-color: #a94332;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #d8b9a5;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+#buscador {
+    width: 300px;
+}
+
+select {
+    background-color: white;
+    cursor: pointer;
+}
+
+.comida-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 35px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px #00000015;
+    border: 1px solid #f0dfd1;
+}
+
+.card h2 {
+    color: #a94332;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.card p {
+    margin-bottom: 12px;
+    color: #6d625a;
+}
+
+.card span {
+    background-color: #f5dfc8;
+    color: #8c4933;
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.addFood {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f2e3d5;
+}
+
+.formulario {
+    background-color: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 10px #00000015;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #a94332;
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+button {
+    background-color: #a94332;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #813326;
+}
+
+.agregarIngrediente {
+    width: 45px;
+    font-size: 20px;
+    padding: 8px;
+}
+
+@media (max-width: 600px) {
+    .filtros {
+        flex-direction: column;
+    }
+
+    #buscador {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
